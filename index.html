@@ -8,13 +8,12 @@
 		<!-- Хедер, он же верхнее навигационное меню -->
 		<header class="heder" class="container">
 			<nav class="navigation">
-				<a class="heder-logo">
-					<img src="" width="368" height="204" alt="Device"</a>
+				<h1 class="heder-logo"> Device </h1>
 				<ul class="site-navigation">
 		         	<li class=site-navigation><input class="search" type="search" name="search" placeholder="Поиск по сайту"></li>
-          			<li class="site-navigation"><a src="img/user.jpg" href="#" class="user">Войти</a></li>
-        			<li class="site-navigation"><a src="img/compare.png" href="compare.html" class="compare">Сравнить</a></li>
-        			<li class="site-navigation">><a src="img/cart.jpg" href="basket.html class="basket">Корзина</a></li>
+          			<li class="site-navigation"><img src="img/user.jpg"><a href="user.html" class="user">Войти</a></li>
+        			<li class="site-navigation"><img src="img/compare.png"<a href="compare.html" class="compare">Сравнить</a></li>
+        			<li class="site-navigation"><img src="img/cart.jpg"<a href="basket.html class="basket">Корзина</a></li>
         		</ul>
          </nav>
         <section class="container">
@@ -27,13 +26,25 @@
         </section>
         </header>
         <main class="container">
-        	
+        	<img src="img/slider-1.jpg">
         	<h1 class="promo-1"> Делай селфи, как Бен Стиллер!</h1>
         	<p class="info selfi">Самая длинная палка для селфи доступна в нашем магазине. Восесь(Восемь, Карл!) метров длинной и весом всего 5 килограмм.</p>
         	<a class="info" href="#"></a>
-        	<input type="radio" class="services-slider-toggle" id="serv-btn-1" name="serv-toggle" checked="">
-			<input type="radio" class="services-slider-toggle" id="serv-btn-2" name="serv-toggle">
-			<input type="radio" class="services-slider-toggle" id="serv-btn-3" name="serv-toggle">
+        	<span>8.5 м длина палки</span>
+        	<span>5 кг вес палки</span>
+        	<span>Карбон материал</span>
+        	<section class="slider1_1">
+        		<input type="radio" name="slider1" id="slider1_1" checked="checked">
+    			<label for="slider1_1"></label>
+    	    	</section>
+        	<section class="slider1_2">
+        		<input type="radio" name="slider1" id="slider1_2" checked="checked">
+    			<label for="slider1_2"></label>
+        	</section>
+        	<section class="slider1_3">
+        		<input type="radio" name="slider1" id="slider1_3" checked="checked">
+    			<label for="slider1_3"></label>
+        	</section>
         	<section class="info product" class="container"> </section>
 
         	<section class="catalog">
@@ -46,15 +57,21 @@
         	</section>
         		<nav class="promomenu" class="container">
 					<ul class="service-menu">
-						<input type="radio" class="services-slider-toggle" id="serv-btn-1" name="serv-toggle" checked="">
-						<input type="radio" class="services-slider-toggle" id="serv-btn-2" name="serv-toggle">
-						<input type="radio" class="services-slider-toggle" id="serv-btn-3" name="serv-toggle">
-						<div class="services-slider-controls">
-							<label for="serv-btn-1" class="delivery-controls">Доставка</label>
-							<label for="serv-btn-2" class="guarantee-controls">Гарантия</label>
-							<label for="serv-btn-3" class="credit-controls">Кредит</label>
-						</div>
-					</ul>
+						<section>
+							<input type="radio" name="delivery-controls" id="delivery-controls" checked="checked">
+    						<label for="delivery-controls"></label>
+    						<p> Доставка </p>
+    						</section>
+        				<section>
+        					<input type="radio" name="guarantee-controls" id="guarantee-controls" checked="checked">
+    						<label for="guarantee-controls"></label>
+    						<p> Гарантия </p>
+        				</section>
+        				<section>
+        					<input type="radio" name="credit-controls" id="credit-controls" checked="checked">
+    						<label for="credit-controls"></label>
+    						<p> Кредиты </p>
+        				</section>
 				</nav>
 			<p class="about us">
 				О нас<br>
@@ -81,22 +98,22 @@
 				</a>
 				<span>г. Москва, ул. Стройителей 15</span>
 				<ul>
-					<li><a href="enter profile.html">Войти</a></li>
-        			<li><a href="compare.html">Сравнить</a></li>
-        			<li><a href="basket.html">Корзина</a></li>
+					<li><img src="img/user.png"><a href="enter profile.html">Войти</a></li>
+        			<li><img src="img/compare.png"><a href="compare.html">Сравнить</a></li>
+        			<li><img src="img/cart.png"><a href="basket.html">Корзина</a></li>
         		</ul>
         		<section class="footermenu" class="container">
 					<ul class="aside-menu">
 						<li class="footer-link"><a href="#">ДОСТАВКА</a></li>
 						<li class="footer-link"><a href="#">ГАРАНИЯ</a></li>
 						<li class="footer-link"><a href="#">Контакты</a></li>
-						<a class="map" src="img/">
+						<img class="map" src="img/map.jpg">
 					</ul>
 				</section>
 				<ul class="container" class="mesenger">
-					<li class="mesenger"><a src="" href="#" class="social-btn social-btn-fb"><i class="icon-facebook"></i></a></li>
-          			<li class="mesenger"><a src="" href="#" class="social-btn social-btn-inst"><i class="icon-instagramm"></i></a></li>
-          			<li class="mesenger"><a src="" href="#" class="social-btn social-btn-twitter"><i class="icon-twitter"></i></a></li>
+					<li class="mesenger"><img src="img/ФБ.png"><a src="" href="#" class="social-btn social-btn-fb"><i class="icon-facebook"></i></a></li>
+          			<li class="mesenger"><img src="img/Твитер.png"><a src="" href="#" class="social-btn social-btn-inst"><i class="icon-instagramm"></i></a></li>
+          			<li class="mesenger"><img src="img/'=].png"><a src="" href="#" class="social-btn social-btn-twitter"><i class="icon-twitter"></i></a></li>
 				</ul>
 			</footer>
 
