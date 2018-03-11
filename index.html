@@ -1,49 +1,50 @@
 <!DOCTYPE html>
-	<html lang="en">
+	<html lang="ru">
 	<head>
 		<meta charset="UTF-8">
-		<title>Divice</title>
+		<title>Device</title>
 	</head>
 	<body>
 		<!-- Хедер, он же верхнее навигационное меню -->
-		<header class="mainheder">
-			<nav class="main-navigation">
-				<a class="main-heder-logo">
-					<img src="img/index-logo.svg" width="368" height="204" alt="Логотоп сайта Device"</a>
+		<header class="heder" class="container">
+			<nav class="navigation">
+				<a class="heder-logo">
+					<img src="" width="368" height="204" alt="Device"</a>
 				<ul class="site-navigation">
-		         	<input class="search" type="search" name="search" placeholder="Поиск по сайту">
-          			<li><a href="enter profile.html">Войти</a></li>
-        			<li><a href="compare.html">Сравнить</a></li>
-        			<li><a href="basket.html">Корзина</a></li>
+		         	<li class=site-navigation><input class="search" type="search" name="search" placeholder="Поиск по сайту"></li>
+          			<li class="site-navigation"><a src="img/user.jpg" href="#" class="user">Войти</a></li>
+        			<li class="site-navigation"><a src="img/compare.png" href="compare.html" class="compare">Сравнить</a></li>
+        			<li class="site-navigation">><a src="img/cart.jpg" href="basket.html class="basket">Корзина</a></li>
         		</ul>
          </nav>
         <section class="container">
-        	<a class="catalog" href=#catalog>Каталог товаров</a>
-        	<a class="delivery" href=#delivery>Доставка</a>
-        	<a class="guarantee" href=#guarantee>Горантия</a>
-        	<a class="Contacts" href=#contacts>Контакты</a>
+        	<ul class="header-link">
+        		<li class="header-link"><a class="header-link" href=#catalog>Каталог товаров</a></li>
+        		<li class="header-link"><a class="header-link" href=#delivery>Доставка</a></li>
+        		<a class="header-link" href=#guarantee>Горантия</a>
+        		<li class="header-link"><a class="header-link" href=#contacts>Контакты</a></li>
+       		 </ul>
         </section>
         </header>
         <main class="container">
         	
-        	<h1 class="visually-hidden"> Делай селфи, как Бен Стиллер!</h1>
+        	<h1 class="promo-1"> Делай селфи, как Бен Стиллер!</h1>
         	<p class="info selfi">Самая длинная палка для селфи доступна в нашем магазине. Восесь(Восемь, Карл!) метров длинной и весом всего 5 килограмм.</p>
         	<a class="info" href="#"></a>
         	<input type="radio" class="services-slider-toggle" id="serv-btn-1" name="serv-toggle" checked="">
 			<input type="radio" class="services-slider-toggle" id="serv-btn-2" name="serv-toggle">
 			<input type="radio" class="services-slider-toggle" id="serv-btn-3" name="serv-toggle">
-<-----Надо конкретно разобратся
-        	<section class="info product"> </section>
+        	<section class="info product" class="container"> </section>
 
         	<section class="catalog">
-        		<a href="#"><img src="" width="160" height="160" alt="Виртуальная реальность"></a>
-        		<a href="#"><img src="" width="160" height="160" alt="Моноподы для селфи"></a>
-        		<a href="#"><img src="" width="160" height="160" alt="Экшн-камеры"></a>
-        		<a href="#"><img src="" width="160" height="160" alt="Фитнес-браслеты"></a>
-        		<a href="#"><img src="" width="160" height="160" alt="Умные часы"></a>
-        		<a href="#"><img src="" width="160" height="160" alt="Квадрокоптеры"></a>
+        		<a href="#"><img src="img/virtual-real.png" width="160px" alt="Виртуальная реальность"></a>
+        		<a href="#"><img src="img/monopod.png" width="160px" alt="Моноподы для селфи"></a>
+        		<a href="#"><img src="img/camera.png" width="160" alt="Экшн-камеры"></a>
+        		<a href="#"><img src="img/fitnesstracker.png" width="160" alt="Фитнес-браслеты"></a>
+        		<a href="#"><img src="img/smart-watch.png" width="160" alt="Умные часы"></a>
+        		<a href="#"><img src="img/poppular-6.png" width="160" alt="Квадрокоптеры"></a>
         	</section>
-        		<nav class="promomenu">
+        		<nav class="promomenu" class="container">
 					<ul class="service-menu">
 						<input type="radio" class="services-slider-toggle" id="serv-btn-1" name="serv-toggle" checked="">
 						<input type="radio" class="services-slider-toggle" id="serv-btn-2" name="serv-toggle">
@@ -73,7 +74,7 @@
 			</ul>
 			<a class="about us critical" href="#">ПОДРОБНЕЕ О НАС</a>
 			<a class="write us" href="#">НАПИШИТЕ НАМ</a>
-			<footer>
+			<footer class="container">
 				<ul>
 				<a class="footer-main">
 					<img src="#" alt="Логотип сайта">
@@ -84,18 +85,19 @@
         			<li><a href="compare.html">Сравнить</a></li>
         			<li><a href="basket.html">Корзина</a></li>
         		</ul>
-        		<section class="footermenu">
+        		<section class="footermenu" class="container">
 					<ul class="aside-menu">
-						<li class="Travel-home"><a href="#">ДОСТАВКА</a></li>
-						<li><a href="#">ГАРАНИЯ</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li class="footer-link"><a href="#">ДОСТАВКА</a></li>
+						<li class="footer-link"><a href="#">ГАРАНИЯ</a></li>
+						<li class="footer-link"><a href="#">Контакты</a></li>
+						<a class="map" src="img/">
 					</ul>
 				</section>
-				<div>
-					<a href="#" class="social-btn social-btn-fb"><i class="icon-facebook"></i></a>
-          			<a href="#" class="social-btn social-btn-inst"><i class="icon-instagramm"></i></a>
-          			<a href="#" class="social-btn social-btn-twitter"><i class="icon-twitter"></i></a>
-				</div>
+				<ul class="container" class="mesenger">
+					<li class="mesenger"><a src="" href="#" class="social-btn social-btn-fb"><i class="icon-facebook"></i></a></li>
+          			<li class="mesenger"><a src="" href="#" class="social-btn social-btn-inst"><i class="icon-instagramm"></i></a></li>
+          			<li class="mesenger"><a src="" href="#" class="social-btn social-btn-twitter"><i class="icon-twitter"></i></a></li>
+				</ul>
 			</footer>
 
 
