@@ -6,9 +6,9 @@
 	</head>
 	<body>
 		<!-- Хедер, он же верхнее навигационное меню -->
-		<header class="heder" class="container">
+		<header class="heder-title">
 			<nav class="navigation">
-				<h1 class="heder-logo"> Device </h1>
+				<a class="heder-logo"><img src="img/logo-main.png"></a>
 				<ul class="site-navigation">
 		         	<li class=site-navigation><input class="search" type="search" name="search" placeholder="Поиск по сайту"></li>
           			<li class="site-navigation"><img src="img/user.jpg"><a href="user.html" class="user">Войти</a></li>
@@ -26,28 +26,30 @@
         </section>
         </header>
         <main class="container">
-        	<section class="slider1_1">
-        		<input type="radio" name="slider1" id="slider1_1" value="btn-1" checked="checked">
+        	<section class="slider-item">
+        		<input type="radio" name="slider1" id="slider1" value="btn-1" checked>
     			<label for="slider1_1"></label>
     	    	</section>
-        	<section class="slider1_2">
-        		<input type="radio" name="slider1" id="slider1_2" value="btn-2" checked="">
+        	<section class="slider-item">
+        		<input type="radio" name="slider1" id="slider1" value="btn-2">
     			<label for="slider1_2"></label>
         	</section>
-        	<section class="slider1_3">
-        		<input type="radio" name="slider1" id="slider1_3" value="btn-3" checked="">
+        	<section class="slider-item">
+        		<input type="radio" name="slider1" id="slider1" value="btn-3">
     			<label for="slider1_3"></label>
         	</section>
-        	<section class="slider-image">
+        	<section class="slider-popular">
             <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
           	</section>
-        	<section class="info product"> </section>
+        	<section class="slider-title"> </section>
         	<h2 class="slider-title"> Делай селфи, как Бен Стиллер!</h2>
         	<p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восесь(Восемь, Карл!) метров длинной и весом всего 5 килограмм.</p>
         	<a class="info" href="#"></a>
-        	<span>8.5 м длина палки</span>
-        	<span>5 кг вес палки</span>
-        	<span>Карбон материал</span>
+        	<ul class="slider-info">
+        		<li>8.5 м длина палки</li>
+        		<li>5 кг вес палки</li>
+        		<li>Карбон материал</li>
+        	</ul>
 
         	<section class="catalog">
         		<a href="#"><img src="img/virtual-real.png" width="160px" alt="Виртуальная реальность"></a>
@@ -57,47 +59,47 @@
         		<a href="#"><img src="img/smart-watch.png" width="160" alt="Умные часы"></a>
         		<a href="#"><img src="img/poppular-6.png" width="160" alt="Квадрокоптеры"></a>
         	</section>
-        		<nav class="promomenu" class="container">
+        		<nav class="promomenu">
 					<ul class="service-menu">
 						<section>
-							<input type="radio" name="delivery-controls" id="delivery-controls" checked="checked">
+							<input type="radio" name="delivery-controls" id="delivery-controls" checked>
     						<label for="delivery-controls"></label>
     						<p> Доставка </p>
     						</section>
         				<section>
-        					<input type="radio" name="guarantee-controls" id="guarantee-controls" checked="">
+        					<input type="radio" name="guarantee-controls" id="guarantee-controls">
     						<label for="guarantee-controls"></label>
     						<p> Гарантия </p>
         				</section>
         				<section>
-        					<input type="radio" name="credit-controls" id="credit-controls" checked="">
+        					<input type="radio" name="credit-controls" id="credit-controls">
     						<label for="credit-controls"></label>
     						<p> Кредиты </p>
         				</section>
 				</nav>
 				<div class="logotypes">
-    <div class="company-logo dji">
+    <div class="company-logo_dji">
       <a target="_blank" href="http://www.dji.com/">
         <img src="img/logo-1-grey.png" width="260" height="100" alt="dji">
       </a>
     </div>
-    <div class="company-logo sp-gadgets">
+    <div class="company-logo_sp-gadgets">
       <a target="_blank" href="http://www.sp-gadgets.com/">
         <img src="img/logo-2-grey.png" width="260" height="100" alt="SP GADGETS">
       </a>
     </div>
-    <div class="company-logo gopro">
+    <div class="company-logo_gopro">
       <a target="_blank" href="https://gopro.com/">
         <img src="img/logo-3-grey.png" width="260" height="100" alt="GoPro">
       </a>
     </div>
-    <div class="company-logo vive">
+    <div class="company-logo_vive">
       <a target="_blank" href="https://www.vive.com/">
         <img src="img/logo-4-grey.png" width="260" height="100" alt="Vive">
       </a>
     </div>
   </div>
-			<p class="about us">
+			<p class="about-us-middle">
 				О нас<br>
 				Огромный выбор гаджетов не оставит равнодушним гика, который есть в каждом из нас.<br>
 				Мы можем достваить ваш товар в самые отдаленые точки<br>
@@ -107,17 +109,16 @@
 			Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
 			проверить работоспособность покупки. Всякое бывает.
 			</p>
-			<ul class="info option">
+			<ul class="info-option">
 				<li><a href="#">Деловые Линни</a></li>
 				<li><a href="#">Автотрейдинг</a></li>
 				<li><a href="#">ЖелДорЭкспедиция</a></li>
 			</ul>
-			<a class="about us critical" href="#">ПОДРОБНЕЕ О НАС</a>
-			<a class="write us" href="#">НАПИШИТЕ НАМ</a>
+			<a class="about-us-footer" href="#">Подробнее о нас</a>
+			<a class="write-us-footer" href="#">Напишите нам</a>
 			<footer class="container">
 				<div class="footer-top">
-					<span class="logo-footer"> Device</ul>
-					</span>
+					<a class="logo-footer"><img src="img/logo-footer.png"></a>
 					<ul class="footer-user-menu">
 					<li><img src="img/user.png"><a href="enter profile.html">Войти</a></li>
         			<li><img src="img/compare.png"><a href="compare.html">Сравнить</a></li>
@@ -135,7 +136,7 @@
 					<p>Тел.: +7(495)495-95-95</p>
 				</div>
 				<div class="footer-buttons">
-				<ul class="container" class="social-buttons">
+				<ul class="social-buttons">
 					<li class="social-buttons"><img src="img/ФБ.png"><a href="#" class="social-btn social-btn-fb">Facebook</a></li>
           			<li class="social-buttons"><img src="img/Твитер.png"><a href="#" class="social-btn social-btn-inst">Instagram</a></li>
           			<li class="social-buttons"><img src="img/'=].png"><a href="#" class="social-btn social-btn-twitter">Twitter</a></li>
