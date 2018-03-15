@@ -2,7 +2,7 @@
 	<html lang="ru">
 	<head>
 		<meta charset="UTF-8">
-		<title>Device-catalog</title>
+		<title>Каталог товаров - Моноподы для селфи</title>
 	</head>
 	<body>
 		<!-- Хедер, он же верхнее навигационное меню -->
@@ -10,7 +10,9 @@
 			<nav class="main-navigation">
 				<a class="main-heder-logo" href="index.html"><img src="img/logo-main.png"></a>
 				<ul class="site-navigation">
-		         	<li class=site-navigation><input class="search" type="search" name="search" placeholder="Поиск по сайту"></li>
+		         	<from class=site-navigation><input class="search" type="search" name="search" placeholder="Поиск по сайту"></li>
+              <input class="search-btn" type="submit" value="Найти">
+            </from>
           			<li class="site-navigation"><img src="img/user.jpg"><a href="user.html" class="user">Войти</a></li>
         			<li class="site-navigation"><img src="img/compare.png"<a href="compare.html" class="compare">Сравнить</a></li>
         			<li class="site-navigation"><img src="img/cart.jpg"<a href="basket.html class="basket">Корзина</a></li>
@@ -30,10 +32,70 @@
           <section class="filtres">
             <h2 class="visually-hidden">Фильтр товаров</h2>
           </section>
+          <section class="catalog-filters">
+          <div class="range-filter">
+            <span class="sub-filter-title">Стоимость</span>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </section>
+            <div class="price-controls">
+              <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+              <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+            </div>
+          </div>
+          <div class="color-filter">
+            <span class="sub-filter-title">Цвет</span>
+            <label>
+              <input class="checkbox" type="checkbox" checked>
+              <span class="checkbox-custom"></span>
+              <span class="label">Черный</span>
+            </label>
+            <label>
+              <input class="checkbox" type="checkbox">
+              <span class="checkbox-custom"></span>
+              <span class="label">Белый</span>
+            </label>
+            <label>
+              <input class="checkbox" type="checkbox" checked>
+              <span class="checkbox-custom"></span>
+              <span class="label">Синий</span>
+            </label>
+            <label>
+              <input class="checkbox" type="checkbox" checked>
+              <span class="checkbox-custom"></span>
+              <span class="label">Красный</span>
+            </label>
+            <label>
+              <input class="checkbox" type="checkbox" checked>
+              <span class="checkbox-custom"></span>
+              <span class="label">Розовый</span>
+            </label>
+          </div>
+          <div class="bluetooth-filter">
+            <span class="sub-filter-title">Bluetooth</span>
+            <label>
+              <input class="radio" type="radio" name="bluetooth" checked>
+              <span class="radio-custom"></span>
+              <span class="label">Есть</span>
+            </label>
+            <label>
+              <input class="radio" type="radio" name="bluetooth">
+              <span class="radio-custom"></span>
+              <span class="label">Нет</span>
+            </label>
+          </div>
+          <button class="btn" type="submit">Показать</button>
+        </form>
+      </div>
+    </div>
         </main>
         <footer class="container">
         <div class="footer-top">
-          <a class="logo-footer"><img src="img/logo-footer.png"></a>
+          <a class="logo-footer" href="index.html"><img src="img/logo-footer.png"></a>
           <ul class="footer-user-menu">
           <li><img src="img/user.png"><a href="enter profile.html">Войти</a></li>
               <li><img src="img/compare.png"><a href="compare.html">Сравнить</a></li>
