@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('2209-webfont.woff2') format('woff2'),
+         url('2209-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'gilroylight';
+    src: url('gilroy-light-webfont.woff2') format('woff2'),
+         url('gilroy-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('gilroy-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.main-heder-logo{
+  position: absolute;
+  top: 25px; 
+  left: 200px;
+}
+.search{
+  position: absolute;
+  top: 90px; 
+  left: 205px;
+}
+.search-btn{
+  position: absolute;
+  top: 90px; 
+  left: 350px;
+}
+.user{
+  position: relative;
+  top: 90px; 
+  left: 740px;
+}
+
+.main-navigation{
+    background-color: #f7e296;
+    background-size: 1160px 300px;
+    font-size: 15px;
+    line-height: 30px;
+}
+.main-menu{
+     font-family: 'open_sanslight';
+     font-size: 18px;
+     line-height: 24px;  
+}
+.site-navigation{
+  list-style: none;
+}
+.site-navigation a:hover,
+.site-navigation a:focus{
+  opacity: 0.5;
+}
+.slider-title{
+  position: absolute;
+  top: 320px; 
+  left: 750px;
+  line-height: 1px;
+  text-align: left;
+  font-size: 47px;
+  line-height: 56px;
+}
