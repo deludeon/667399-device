@@ -1,67 +1,72 @@
 @font-face {
-    font-family: 'open_sanslight';
-    src: url('2209-webfont.woff2') format('woff2'),
-         url('2209-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-@font-face {
-    font-family: 'gilroylight';
-    src: url('gilroy-light-webfont.woff2') format('woff2'),
-         url('gilroy-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "Gilroy";
+  font-weight: bold;
+  src: url(../fonts/gilroyextrabold.woff) format("woff"),
+  url(../fonts/gilroyextrabold.woff2) format("woff2");
 }
 
 @font-face {
-    font-family: 'gilroyextrabold';
-    src: url('gilroy-extrabold-webfont.woff2') format('woff2'),
-         url('gilroy-extrabold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Gilroy";
+  font-weight: 300;
+  src: url(../fonts/gilroylight.woff) format("woff"),
+  url(../fonts/gilroylight.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/opensans.woff) format("woff"),
+  url(../fonts/opensans.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 300;
+  src: url(../fonts/opensanslight.woff) format("woff"),
+  url(../fonts/opensanslight.woff2) format("woff2");
 }
 
 body {
   margin: 0;
   padding: 0;
 
-  font-family: "gilroyextrabold", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
+  min-width: 1200px;
+  font-size: 15px;
+  color: #444444;
+  font-family: "Open Sans", "Arial", sans-serif;
+  letter-spacing: 0.01em;
 }
+
+.header {
+  position: relative;
+  width: 1160px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffe294;
+  color: #000000;
+}
+
+.header-logo {
+  font-size: 48px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.header-logo {
+  position: absolute;
+  top: -14px;
+  left: 57px;
+}
+
 a {
   text-decoration: none;
   color: #000000;
 }
-.main-heder-logo{
-  position: absolute;
-  top: 25px; 
-  left: 200px;
-}
-.search{
-  position: absolute;
-  top: 90px; 
-  left: 205px;
-}
-.search-btn{
-  position: absolute;
-  top: 90px; 
-  left: 350px;
-}
-.user{
-  position: relative;
-  top: 90px; 
-  left: 740px;
-}
 
 .main-navigation{
     background-color: #f7e296;
-    background-size: 1160px 300px;
     font-size: 15px;
     line-height: 30px;
 }
@@ -72,17 +77,127 @@ a {
 }
 .site-navigation{
   list-style: none;
-}
-.site-navigation a:hover,
-.site-navigation a:focus{
-  opacity: 0.5;
+  display: inline-block;
 }
 .slider-title{
-  position: absolute;
-  top: 320px; 
-  left: 750px;
   line-height: 1px;
   text-align: left;
   font-size: 47px;
   line-height: 56px;
+}
+.heder-link{
+  display: inline-block;
+}
+.footer-top{
+   list-style: none;
+   display: inline-block;
+}
+.main-footer {
+  font-family: 'open_sanslight';
+  font-size: 18px;
+  line-height: 24px;  
+  color: #ffffff;
+  background-color: #212121;
+}
+.footer-link a{
+  color: #ffffff;
+}
+.footer-top a{
+  color: #ffffff;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.main-menu a:hover,
+.main-menu a:focus,
+.footer-link a:hover,
+.footer-link a:focus,
+.footer-top a:hover,
+.footer-top a:focus,
+.popular-itm a:hover,
+.popular-itm a:focus{
+  opacity: 0.5;
+}
+.footer-site-menu .footer-link{
+  display: inline-block;
+}
+.popular {
+  width: 1160px;
+  margin: 0 auto;
+  padding-bottom: 69px;
+}
+
+.popular ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.popular li {
+  display: inline-block;
+  width: 160px;
+  margin-right: 40px;
+}
+
+a:hover > .popular-itm {
+  background-color: #ffc600;
+}
+
+.popular li:active {
+  opacity: 0.3;
+}
+
+.popular a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.popular-itm {
+  display: flex;
+  width: 160px;
+  height: 160px;
+  background-color: #ffe294;
+}
+
+.popular-itm img {
+  margin: auto;
+}
+
+.popular-img.img-1 img {
+  margin-top: 52px;
+}
+
+.popular-img.img-2 img {
+  margin-bottom: 0;
+  margin-left: 38px;
+}
+
+.popular-img.img-3 img {
+  margin-top: 38px;
+  margin-left: 49px;
+}
+
+.popular-img.img-4 img {
+  margin-top: 50px;
+  margin-left: 28px;
+}
+
+.popular-img.img-5 img {
+  margin-left: 55px;
+  margin-top: 32px;
+}
+
+.popular-img.img-6 img {
+  margin-top: 49px;
+  margin-left: 13px;
+}
+
+.popular-title {
+  font-size: 18px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  margin-top: 35px;
+}
+
+.popular-title.shorter {
+  width: 100px;
 }

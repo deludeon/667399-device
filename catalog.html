@@ -6,25 +6,49 @@
 	</head>
 	<body>
 		<!-- Хедер, он же верхнее навигационное меню -->
-		<header class="main-heder">
-			<nav class="main-navigation">
-				<a class="main-heder-logo" href="index.html"><img src="img/logo-main.png"></a>
-				<ul class="site-navigation">
-		         	<from class=site-navigation><input class="search" type="search" name="search" placeholder="Поиск по сайту"></li>
-              <input class="search-btn" type="submit" value="Найти">
-            </from>
-          			<li class="site-navigation"><img src="img/user.jpg"><a href="user.html" class="user">Войти</a></li>
-        			<li class="site-navigation"><img src="img/compare.png"<a href="compare.html" class="compare">Сравнить</a></li>
-        			<li class="site-navigation"><img src="img/cart.jpg"<a href="basket.html class="basket">Корзина</a></li>
-        		</ul>
+		<header class="header">
+      <nav class="main-navigation">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <a class="heder-logo"><img src="img/logo-main.png"></a>
+      <ul class="site-navigation">
+             <from class=site-navigation><input class="search" type="search" name="search" placeholder="Поиск по сайту">
+                    <input class="search-btn" type="submit" value="Найти">
+              </from>
+                <li class="site-navigation"><img class="user" src="img/user.jpg"><a class="user" href="user.html">Войти</a></li>
+              <li class="site-navigation"><img class="compare" src="img/compare.png"><a href="compare.html" class="compare">Сравнить</a></li>
+              <li class="site-navigation"><img class="basket" src="img/cart.jpg"><a class="basket" href="basket.html">Корзина</a></li>
+            </ul>
          </nav>
-        <section class="container">
-        	<ul class="header-link">
-        		<li class="header-link"><a class="header-link" href=#catalog>Каталог товаров</a></li>
-        		<li class="header-link"><a class="header-link" href=#delivery>Доставка</a></li>
-        		<a class="header-link" href=#guarantee>Горантия</a>
-        		<li class="header-link"><a class="header-link" href=#contacts>Контакты</a></li>
-       		 </ul>
+        <section class="main-menu">
+          <ul class="header-link">
+            <li class="header-link"><a class="header-link" href=#catalog>Каталог товаров</a></li>
+            <ul class="dropdown-content">
+              <li>
+                <ul>
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="#">Экшн-камеры</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <ul>
+                  <li><a href="#">Фитнесс-браслеты</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <ul>
+                  <li><a href="#">Квадрокоптеры</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+            <li class="header-link"><a class="header-link" href=#delivery>Доставка</a></li>
+            <a class="header-link" href=#guarantee>Горантия</a>
+            <li class="header-link"><a class="header-link" href=#contacts>Контакты</a></li>
+           </ul>
         </section>
         </header>
         <main class="container">
@@ -93,21 +117,21 @@
       </div>
     </div>
         </main>
-        <footer class="container">
+        <footer class="main-footer">
         <div class="footer-top">
-          <a class="logo-footer" href="index.html"><img src="img/logo-footer.png"></a>
+          <a class="logo-footer"><img src="img/logo-footer.png"></a>
           <ul class="footer-user-menu">
-          <li><img src="img/user.png"><a href="enter profile.html">Войти</a></li>
-              <li><img src="img/compare.png"><a href="compare.html">Сравнить</a></li>
-              <li><img src="img/cart.png"><a href="basket.html">Корзина</a></li>
+            <li class="footer-top"><img class="footer-top" src="img/user.png"><a href="enter profile.html">Войти</a></li>
+                <li class="footer-top"><img class="footer-top" src="img/compare.png"><a href="compare.html">Сравнить</a></li>
+                <li class="footer-top"><img class="footer-top" src="img/cart.png"><a href="basket.html">Корзина</a></li>
               </ul>
             </div>
             <div class="footer-middle">
               <p>г. Москва, ул. Стройителей 15</p>
         <ul class="footer-site-menu">
-            <li class="footer-link"><a href="#">Доставка</a></li>
-            <li class="footer-link"><a href="#">Гарантия</a></li>
-            <li class="footer-link"><a href="#">Контакты</a></li>
+            <li class="footer-link"><a class="footer-link" href="#">Доставка</a></li>
+            <li class="footer-link"><a class="footer-link" href="#">Гарантия</a></li>
+            <li class="footer-link"><a class="footer-link" href="#">Контакты</a></li>
           </ul>
           <p>Тел.: +7(495)495-95-95</p>
         </div>
@@ -118,9 +142,10 @@
                 <li class="social-buttons"><img src="img/'=].png"><a href="#" class="social-btn social-btn-twitter">Twitter</a></li>
                 </ul>
                 <p class="copyright">
-                  <span class="icon">HTML Academy</span>
+                  <img class="icon" src="img/logo-html.png">
                 </p>
         </div>
       </footer>
-      </body>
+        </main>
+  </body>
   </html>
