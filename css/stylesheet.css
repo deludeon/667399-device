@@ -1215,7 +1215,7 @@ tbody td {
   margin-top: 44px;
   margin-bottom: 0;
 }
-
+ 
 .footer-social-copyright .line-block {
   background-color: #ffe27f;
 
@@ -2078,3 +2078,4 @@ input[type="radio"]:focus + label::before {
 .paginator-next:active  {
   opacity: 0.3;
 }
+/*end*/
