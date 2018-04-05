@@ -9,7 +9,7 @@
   <body>
     <header class="header">
   <div class="layout-container">
-    <p class="header-logo" aria-label="Логотип">Device</p>
+    <img class="header-logo" src="img/main-logo.svg" width="165" height="35" alt="Device">
     <div class="header-wrapper-top">
       <div class="search">
         <form class="search-form" action="https://eco.htmlacademy.ru" method="get">
@@ -51,7 +51,7 @@
               <li><a href="#">Фитнес-браслеты</a></li>
               <li><a href="#">Умные часы</a></li>
               <li><a href="#">&nbsp;</a></li>
-              <li><a href="#">Квадрокоптеры</a></li>
+              <li ><a href="#">Квадрокоптеры</a></li>
             </ul>
           </li>
           <li><a href="#">Доставка</a></li>
@@ -215,16 +215,16 @@
           <label class="btn services" for="credit-radio">Кредит</label>
         </div>
         <div class="services-item delivery">
-          <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим вам товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <h3 class="delivery-service-btn">Доставка</h3>
+          <p class="info-delivery">Мы с удовольствием доставим вам товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо<br> заработаем, поднимая его на ваш этаж.</p>
         </div>
         <div class="services-item warranty">
-          <h3>Гарантия</h3>
-          <p>Если из-за возгарания купленного у нас товара у вас сгорит дом - не переживайте мы выдадим вам новый. Товар, не дом конечно же. </p>
+          <h3 class="delivery-warranty-btn" >Гарантия</h3>
+          <p class="info-warranty">Если из-за возгарания купленного у нас товара у вас сгорит дом - не переживайте мы выдадим вам новый. Товар, не дом конечно же. </p>
         </div>
         <div class="services-item credit">
-          <h3>Кредит</h3>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для вашего банка, разумеется.</p>
+          <h3 class="delivery-credit-btn">Кредит</h3>
+          <p class="info-delivery">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для вашего банка, разумеется.</p>
         </div>
       </div>
     </section>
@@ -251,16 +251,14 @@
       </a>
     </div>
   </div>
+  <hr class="line-under"  align="left">
   <div class="information">
     <section class="info">
-      <span class="line-block"></span>
       <h2 class="content-title">О нас</h2>
       <p class="content-text first">Огромный выбор гаджетов не оставит равнодушным гика, который есть в
         каждом из нас</p>
 
-        <p class="content-text second">Мы можем доставить ваш товар в самые отдельные точки России! DEVICE
-          работает со многими транспортными компаниями:</p>
-
+        <p class="content-text second">Мы можем доставить ваш товар в самые отдельные точки<br>России! DEVICE работает со многими транспортными компаниями:</p>
           <ul>
             <li class="list-item">
               <span class="list-item-title">Деловые Линии</span>
@@ -275,9 +273,10 @@
 
           <a class="btn" href="#">Подробнее о нас</a>
         </section>
+        
         <section class="contact">
-          <span class="line-block"></span>
-          <h2 class="content-title">Контакты</h2>
+          <hr class="line-under-contact"  align="left">
+          <h2 class="content-title-contact">Контакты</h2>
           <p class="content-text third">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.</p>
 
@@ -307,19 +306,20 @@
               <p class="adress">г. Москва, ул. Строителей, 15</p>
               <nav class="footer-navigation">
                 <ul>
-                  <li class="delivery">
+                  <li class="delivery-footer">
                     <a href="#">Доставка</a>
                   </li>
-                  <li class="warranty">
+                  <li class="warranty-footer">
                     <a href="#">Гарантия</a>
                   </li>
-                  <li class="contacts">
+                  <li class="contacts-footer">
                     <a href="#">Контакты</a>
                   </li>
                 </ul>
               </nav>
               <p class="telephone">Тел.: +7 (495) 495-95-95</p>
             </div>
+            <hr class="line-footer"  align="left">
             <section class="footer-social-copyright">
               <span class="line-block"></span>
               <div class="social-icons">
@@ -328,7 +328,7 @@
                 <a class="social-btn twitter-icon" href="#">Твиттер</a>
               </div>
               <div class="copyright">
-                <a href="#">
+                <a href="https://htmlacademy.ru">
                   <p>Сделано HTML-академией</p>
                 </a>
               </div>

@@ -7,40 +7,40 @@
     <link href="css/stylesheet.css" rel="stylesheet">
 	</head>
 	<body>
-		<header class="header">
-  <div class="layout-container">
-    <a class="header-logo" href="index.html" aria-label="Логотип">Device</a>
-    <div class="header-wrapper-top">
-      <div class="search">
-        <form class="search-form" action="https://eco.htmlacademy.ru" method="get">
-          <label class="visually-hidden" for="search-field">Поиск по сайту</label>
-          <input class="search-field" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
-          <button class="search-button" type="submit" aria-label="Начать поиск.">Найти</button>
+		<header class="header-catalog">
+  <div class="layout-container-catalog">
+    <a class="header-logo" href="index.html">
+      <img src="img/main-logo.svg" width="162" height="34" alt="Device">
+    </a>
+    <div class="header-wrapper-top-catalog">
+      <div class="search-catalog">
+        <form class="search-form-catalog" action="https://eco.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="search-field-catalog">Поиск по сайту</label>
+          <input class="search-field-catalog" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+          <button class="search-button-catalog" type="submit" aria-label="Начать поиск.">Найти</button>
         </form>
       </div>
-      <ul class="user-navigation user-navigation-header">
+      <ul class="user-navigation user-navigation-header-catalog">
         <li class="navigation-item">
-            <ul class="user-navigation user-navigation-header">
-            <li class="navigation-item">
-              <li><a class="login-link" href="profile.html">Валентин Петухов</a></li>
-                <img src="img/user.svg" width="13" height="13" alt="">
-              <li><a class="logout-link" href="#">Выйти</a></li>
-            </li>
-        <li class="navigation-item">
-          <a class="compare-link" href="#">
-            <img src="img/compare.svg" width="10" height="10" alt="">
-            Сравнить
-          </a>
+           <img class="catalog-user" src="img/user.svg" width="13" height="13" alt="">
+              <a class="login-link-catalog" href="profile.html">Валентин Петухов</a>
+        </li>
+        <li>
+            <a class="logout-link-exit-catalog" href="#">Выйти</a>
         </li>
         <li class="navigation-item">
-          <a class="cart-link" href="#">
-            <img src="img/cart.svg" width="13" height="13" alt="">
+            <a class="compare-link-catalog" href="#">
+            <img class="catalog-compare" src="img/compare.svg" width="10" height="10" alt="">
+            Сравнить
+           </a>
+        </li>
+        <li class="navigation-item">
+          <a class="cart-link-catalog" href="#">
+            <img class="catalog-cart" src="img/cart.svg" width="13" height="13" alt="">
             Корзина
           </a>
         </li>
       </ul>
-      </li>
-    </ul>
   </div>
     <div class="header-wrapper-menu">
       <nav class="page-navigation">
@@ -68,7 +68,7 @@
 
      <main class="page-main">
       <section class="breadcrumbs">
-        <h1>Моноподы для селфи</h1>
+        <h1 class="page-title">Моноподы для селфи</h1>
         <div class="breadcrumbs-links" aria-label="Путь по сайту">
          <a href="#">Главная</a>
          <a href="#">Каталог товаров</a>
@@ -79,7 +79,7 @@
       <div class="inner-wrapper">
         <aside class="main-filter">
           <div class="wrapper">
-            <h2>Фильтр:</h2>
+            <h2 class="filter-catalog">Фильтр:</h2>
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="price-filter">
                 <h3>Стоимость</h3>
@@ -93,10 +93,10 @@
                 </p>
               </div>
               <div class="color-filter">
-                <h3>Цвет</h3>
+                <h3 class="catalog-color">Цвет</h3>
                 <p class="color-black">
                   <input type="checkbox" name="black" id="choose-black" class="visually-hidden" checked>
-                  <label for="choose-black">Черный</label>
+                  <label  for="choose-black">Черный</label>
                 </p>
                 <p class="color-white">
                   <input type="checkbox" name="white" id="choose-white" class="visually-hidden">
@@ -116,7 +116,7 @@
                 </p>
               </div>
               <div class="bluetooth-filter" aria-label="Выбор наличия bluetooth.">
-                <h3>Bluetooth</h3>
+                <h3 class="Bluetooth-catalog">Bluetooth</h3>
                   <p class="radio-yes">
                     <input type="radio" name="radio" id="choose-yes" class="visually-hidden" value="yes" checked>
                     <label for="choose-yes">Есть</label>
@@ -242,12 +242,13 @@
           <div class="footer-container">
 
             <div class="site-logo footer-logo">
-              <a href="#"><img src="img/f-logo.png" alt="Device" width="165" height="35"></a>
+              <a href="#"><img src="img/f-logo.png" width="162" height="34" alt="Device"></a>
             </div>
             <div class="footer-user-block">
-              <a class="login" href="#">Войти</a>
-              <a class="compare" href="#">Сравнить</a>
-              <a class="basket" href="#">Корзина</a>
+              <a class="login-catalog" href="profile.html">Валентин Петухов</a>
+              <a href="profile.html" class="logout-catalog">Выйти</a>
+              <a class="compare-catalog" href="#">Сравнить</a>
+              <a class="basket-catalog" href="#">Корзина</a>
             </div>
 
 
@@ -255,19 +256,20 @@
               <p class="adress">г. Москва, ул. Строителей, 15</p>
               <nav class="footer-navigation">
                 <ul>
-                  <li class="delivery">
+                  <li class="delivery-footer">
                     <a href="#">Доставка</a>
                   </li>
-                  <li class="warranty">
+                  <li class="warranty-footer">
                     <a href="#">Гарантия</a>
                   </li>
-                  <li class="contacts">
+                  <li class="contacts-footer">
                     <a href="#">Контакты</a>
                   </li>
                 </ul>
               </nav>
               <p class="telephone">Тел.: +7 (495) 495-95-95</p>
             </div>
+            <hr class="line-footer"  align="left">
             <section class="footer-social-copyright">
               <span class="line-block"></span>
               <div class="social-icons">
