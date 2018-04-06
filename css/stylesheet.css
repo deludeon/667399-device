@@ -917,7 +917,7 @@ tbody td {
     color: black; 
     height: 7px;
     width: 80px;
-    margin-left: 75px;
+    margin-left: 235px;
     margin-top: -7px;
    }
 
@@ -1348,22 +1348,14 @@ tbody td {
   margin-bottom: 0;
 }
  
-.footer-social-copyright .line-block {
-  background-color: #ffe27f;
-
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-}
-
 .line-footer {
     border: none; 
     background-color: orange; 
-    color: orange; 
-    height: 7px;
+    height: 8px;
     width: 80px;
-    margin-right: 1000px;
     margin-top: 60px;
+    margin-left: 0px;
+
    }
 
 .social-icons {
@@ -1411,23 +1403,25 @@ tbody td {
 a.facebook-icon {
   margin-left: 12px;
   margin-right: 4px;
-  margin-top: -4px;
+  margin-top: -80px;
 }
 
 a.instagram-icon {
   margin-left: 5px;
-  margin-top: -4px;
+  margin-top: -80px;
 }
 
 a.twitter-icon {
   margin-left: 5px;
-  margin-top: -4px;
+  margin-top: -80px;
 }
 
 .copyright {
   position: absolute;
   right: 1px;
   font-size: 0px;
+  margin-top: 150px;
+  margin-right: 93px;
   padding: 0;
 }
 
@@ -1436,6 +1430,7 @@ a.twitter-icon {
   margin: 0;
   width: 28px;
   height: 43px;
+
   background: transparent url("../img/spritesheet.png") no-repeat;
   background-position: -193px -5px;
 }
@@ -2636,7 +2631,7 @@ input[type="radio"]:focus + label::before {
     color: orange; 
     height: 7px;
     width: 80px;
-    margin-right: 1000px;
+    margin-left: 0px;
     margin-top: 60px;
    }
 
@@ -2700,7 +2695,8 @@ a.twitter-icon-catalog {
 .copyright-catalog {
   position: absolute;
   right: 1px;
-  margin-top: -55px;
+  margin-top: 150px;
+  margin-right: 95px;
   font-size: 0px;
   padding: 0;
 }
