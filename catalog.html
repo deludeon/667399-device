@@ -96,23 +96,23 @@
                 <h3 class="catalog-color">Цвет</h3>
                 <p class="color-black">
                   <input type="checkbox" name="black" id="choose-black" class="visually-hidden" checked>
-                  <label  for="choose-black">Черный</label>
+                  <label class="colors-item" for="choose-black">Черный</label>
                 </p>
                 <p class="color-white">
                   <input type="checkbox" name="white" id="choose-white" class="visually-hidden">
-                  <label for="choose-white">Белый</label>
+                  <label class="colors-item" for="choose-white">Белый</label>
                 </p>
                 <p class="color-blue">
                   <input type="checkbox" name="blue" id="choose-blue" class="visually-hidden" checked>
-                  <label for="choose-blue">Синий</label>
+                  <label class="colors-item" for="choose-blue">Синий</label>
                 </p>
                 <p class="color-red">
                   <input type="checkbox" name="red" id="choose-red" class="visually-hidden" checked>
-                  <label for="choose-red">Красный</label>
+                  <label class="colors-item" for="choose-red">Красный</label>
                 </p>
                 <p class="color-pink">
                   <input type="checkbox" name="pink" id="choose-pink" class="visually-hidden">
-                  <label for="choose-pink">Розовый</label>
+                  <label class="colors-item" for="choose-pink">Розовый</label>
                 </p>
               </div>
               <div class="bluetooth-filter" aria-label="Выбор наличия bluetooth.">
@@ -238,13 +238,13 @@
       </div>
     </main>
 
-     <footer class="main-footer">
-          <div class="footer-container">
+     <footer class="main-footer-catalog">
+          <div class="footer-container-catalog">
 
-            <div class="site-logo footer-logo">
+            <div class="site-logo footer-logo-catalog">
               <a href="#"><img src="img/f-logo.png" width="162" height="34" alt="Device"></a>
             </div>
-            <div class="footer-user-block">
+            <div class="footer-user-block-catalog">
               <a class="login-catalog" href="profile.html">Валентин Петухов</a>
               <a href="profile.html" class="logout-catalog">Выйти</a>
               <a class="compare-catalog" href="#">Сравнить</a>
@@ -252,32 +252,31 @@
             </div>
 
 
-            <div class="footer-contacts-navigation">
+            <div class="footer-contacts-navigation-catalog">
               <p class="adress">г. Москва, ул. Строителей, 15</p>
               <nav class="footer-navigation">
                 <ul>
-                  <li class="delivery-footer">
+                  <li class="delivery-footer-catalog">
                     <a href="#">Доставка</a>
                   </li>
-                  <li class="warranty-footer">
+                  <li class="warranty-footer-catalog">
                     <a href="#">Гарантия</a>
                   </li>
-                  <li class="contacts-footer">
+                  <li class="contacts-footer-catalog">
                     <a href="#">Контакты</a>
                   </li>
                 </ul>
               </nav>
-              <p class="telephone">Тел.: +7 (495) 495-95-95</p>
+              <p class="telephone-catalog">Тел.: +7 (495) 495-95-95</p>
             </div>
-            <hr class="line-footer"  align="left">
-            <section class="footer-social-copyright">
-              <span class="line-block"></span>
-              <div class="social-icons">
-                <a class="social-btn facebook-icon" href="#">Фейсбук</a>
-                <a class="social-btn instagram-icon" href="#">Инстаграм</a>
-                <a class="social-btn twitter-icon" href="#">Твиттер</a>
+            <hr class="line-footer-catalog"  align="left">
+            <section class="footer-social-copyright-catalog">
+              <div class="social-icons-catalog">
+                <a class="social-btn facebook-icon-catalog" href="#">Фейсбук</a>
+                <a class="social-btn instagram-icon-catalog" href="#">Инстаграм</a>
+                <a class="social-btn twitter-icon-catalog" href="#">Твиттер</a>
               </div>
-              <div class="copyright">
+              <div class="copyright-catalog">
                 <a href="#">
                   <p>Сделано HTML-академией</p>
                 </a>
@@ -285,36 +284,3 @@
             </section>
           </div>
         </footer>
-
-        <!-- Pop up write us -->
-        <div class="write-us-popup">
-          <button class="cross-button" type="submit"></button>
-          <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="name-block">
-              <label>Ваше имя:</label>
-              <input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
-            </div>
-
-            <div class="email-block">
-              <label>Ваше e-mail:</label>
-              <input type="email" name="email" value="" placeholder="Для отправки ответа">
-            </div>
-
-            <div class="text-block">
-              <label>Текст письма:</label>
-              <textarea placeholder="В свободной форме"></textarea>
-            </div>
-
-            <button class="btn" type="submit">Отправить</button>
-
-          </form>
-        </div>
-        <div class="map-google">
-          <button class="cross-button" type="submit"></button>
-
-          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3782.569216264642!2d37.52794335580242!3d55.68674300171296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YPQu9C40YbQsCDRgdGC0YDQvtC40YLQtdC70LXQuSAxNQ!5e0!3m2!1sru!2sru!4v1487682785556" width="960" height="559" style="border:0" allowfullscreen></iframe>
-
-        </div>
-        <script src="js/script.js" async></script>
-      </body>
-      </html>
